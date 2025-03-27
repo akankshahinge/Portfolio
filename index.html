@@ -6,139 +6,170 @@
     <title>Akanksha - Software Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
-        *{
-            margin: 0px;
-            padding: 0px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        body{
+        body {
             background-color: rgb(14, 14, 75);
             color: white;
-            font-family: "Poppins"
+            font-family: "Poppins", sans-serif;
         }
-        nav{
+        nav {
             background-color: rgb(36, 36, 109);
             display: flex;
             align-items: center;
-            justify-content: space-around;
-            height: 90px;
-        }
-        nav ul{
-            display: flex;
             justify-content: space-between;
-           
+            padding: 0 5%;
+            height: 80px;
         }
-        nav ul li{
+        nav ul {
+            display: flex;
             list-style: none;
-            margin: 0 22px;
         }
-        .left{
-            font-size: 1.5rem;
+        nav ul li {
+            margin: 0 15px;
         }
-        .firstSection{
-            display: flex;
-            justify-content: space-around;
-            margin: 55px 0;
-        }
-        .firstSection > div{
-            width: 30%;
-        }
-        .leftSection{
-            font-size: 2rem;
-            display: flex;
-            align-items: center;
-            margin-top: 5%;
-        }
-        .rightSection{
-            margin-top: 5%;
-        }
-        .main_img{
-            height:425px;
-            width: 425px;
-        }
-        .purple{
-            color: rgb(184, 147, 220);
-        }
-        nav div ul li a{
+        nav ul li a {
             text-decoration: none;
             color: white;
+            font-weight: 500;
         }
-        nav div ul li a:hover{
+        nav ul li a:hover {
             color: rgb(184, 147, 220);
-            font-size: 1.06rem;
         }
-        .pastExperience{
-            font-size: 1.2rem;
-            margin-left: 10%;
-            margin-top: 15%;
-        }
-        .secondSection h1{
-            font-size: 1.2rem;
-        }
-        .secondSection{
-            height: 80vh;
-        }
-        .box{
-            background-color: white;
-            height: 2px;
-            width:70vw;
-            margin: 140px 0;
-            margin-left: 10%;
-            display:flex;
+        .firstSection {
+            display: flex;
             justify-content: space-between;
-            margin-right: 20px;
+            align-items: center;
+            padding: 50px 10%;
         }
-        .vertical_box{
-            background-color: white;
-            width:2px;
-            height: 11vh;
+        .firstSection .leftSection {
+            flex: 1;
+            font-size: 2rem;
         }
-        .vertical_desc{
-            width: 17vw;
+        .firstSection .rightSection {
+            flex: 1;
+            text-align: right;
+        }
+        .main_img {
+            height: 400px;
+            width: 400px;
+        }
+        .purple {
+            color: rgb(184, 147, 220);
+        }
+        .secondSection, .thirdSection {
+            padding: 50px 10%;
+        }
+        .pastExperience h1, .education h1 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        .box {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .contact-container {
+        text-align: center;
+        padding: 20px;
+        background: rgb(59, 59, 121);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        margin: 20px auto;
+    }
+
+    .contact-box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-item {
+        display: flex;
+        font-family: "Poppins", sans-serif;
+        align-items: center;
+        background: rgb(10, 10, 53);
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-item img.icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    .contact-item a {
+        text-decoration: none;
+        color: #166ecd;
+        font-weight: bold;
+    }
+
+    .contact-item a:hover {
+        text-decoration: underline;
+    }
+        .vertical_box {
+            background-color: rgb(26, 26, 77);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            width: 300px;
+        }
+        .vertical_img {
+            height: 50px;
+            width: 50px;
+            margin-bottom: 10px;
+        }
+        .vertical_title {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        .vertical_year {
+            font-size: 1rem;
+            color: rgb(184, 147, 220);
+        }
+        .vertical_desc {
+            font-size: 0.9rem;
+            margin-top: 10px;
+            color: lightgray;
+        }
+        .vertical_jd ul {
+            text-align: left;
+            font-size: 0.85rem;
+            margin-top: 10px;
+            padding-left: 15px;
             color: rgb(172, 164, 164);
         }
-        .vertical_title{
-            margin-top: 40px;
-            width: 17vw;
-        }
-        .vertical_year{
-            width: 17vw; 
-        }
-        .vertical_jd{
-            width: 17vw; 
-            color: rgb(128, 122, 122);
-            margin-top: 18px;
-            font-size: 12px;
-        }
-        .vertical_img{
-            height:40px;
-            width: 40px;
-            position:relative;
-            top: -80px;
-            left: -20px
-        }
-        .footer{
+        .footer {
             background-color: rgb(59, 59, 121);
             color: gray;
-            height: 75px;
-            margin-top: 90px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="left">Akanksha's Portfolio</div>
+            <div class="left">Akanksha Hinge</div>
             <div class="right">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact Me</a></li>
-                    <li><a href="">Projects</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#">Projects</a></li>
                 </ul>
             </div>
         </nav>
@@ -146,27 +177,24 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">
-                
-                <div>Hi, I am <span class="purple">Akanksha</span> and I am <span class="purple"><span id="element">Software Developer</span></span></div>
-                
+                <div>Hi, I am <span class="purple">Akanksha</span> and I am a <span class="purple"><span id="element">Software Developer</span></span></div>
             </div>
             <div class="rightSection">
-                <img class="main_img" src="girl_developer.png" alt="Developer's Image">
+                <img class="main_img" src="girl_developer.png" alt="Developer Image">
             </div>
         </section>
         <section class="secondSection">
             <div class="pastExperience">
-                <h1> Work Experiences</h1>
+                <h1>Work Experiences</h1>
             </div>
             <div class="box">
                 <div class="vertical_box">
-                    <img class ="vertical_img" src="cloud_dev.png" alt="graduation">
-                    <div class ="vertical_title">Georgia State University</div>
-                    <div class ="vertical_year">(Aug 2024 - Present)</div>
-                    <div class ="vertical_desc">Graduate Research Assistant</div>
+                    <div class="vertical_title">Georgia State University</div>
+                    <div class="vertical_year">(Aug 2024 - Present)</div>
+                    <div class="vertical_desc">Graduate Research Assistant</div>
                     <div class="vertical_jd">
                         <ul>
-                            <li>Teaching Assistant for CIS3260 (Introduction to Programming) under the supervision of Prof. Yuan Long</li>
+                            <li>Teaching Assistant for CIS3260</li>
                             <li>Conduct lab sessions for 55 undergraduate students on Python programming</li>
                             <li>Grade student assignments based on established criteria</li>
                             <li>Attend in-class sessions to provide guidance and support during hands-on activities</li>
@@ -175,37 +203,32 @@
                     </div>
                 </div>
                 <div class="vertical_box">
-                    <img class ="vertical_img" src="python_logo.png" alt="graduation">
-                    <div class ="vertical_title">Oracle India Pvt. Ltd.</div>
-                    <div class ="vertical_year">(Sept 2021- Aug 2024)</div>
-                    <div class ="vertical_desc">Software Developer 2</div>
+                    <div class="vertical_title">Oracle India Pvt. Ltd.</div>
+                    <div class="vertical_year">(Sept 2021- Aug 2024)</div>
+                    <div class="vertical_desc">Software Developer 2</div>
                     <div class="vertical_jd">
                         <ul>
                             <li>Developed components, component groups, scheduled maintenance, incident’s APIs (CRUD operations) in Flask
                                 (Python) for Oracle Cloud Infrastructure Status Service (OCI) V2 project by increasing efficiency by 20%</li>
-                            <li>Created soft delete and hard delete API to delete Status Page instances (Feature development)</li>
+                            <li>Created soft delete and hard delete API to delete Status Page instances (Feature development</li>
                             <li>Handled database operations to modify database and create stored procedures using OracleDB for Status Page APIs</li>
                             <li>Documented Status Page API Specifications (Open API Specifications) in Swagger and API testing using Postman</li>
-                            <li>Participated in Production, UAT Deployments, issue resolving using K8s pod logs, root cause analysis, On-Call rotation</li>
+                            <li>Participated in Production, UAT Deployments, issue resolving using K8s pod logs, root cause analysis, On-Call rotation.</li>
                             <li>Upgraded 3rd and 4th parties using Pipdep Trees</li>
                         </ul>
                     </div>
                 </div>
-            </div>
-
                 <div class="vertical_box">
-                    <img class ="vertical_img" src="cloud_dev.png" alt="graduation">
-                    <div class ="vertical_title">ESDS Software Solution Pvt. Ltd</div>
-                    <div class ="vertical_year">(Jun 2019 - Sept 2021)</div>
-                    <div class ="vertical_desc">Jr. Research Engineer</div>
+                    <div class="vertical_title">ESDS Software Solution Pvt. Ltd.</div>
+                    <div class="vertical_year">(Jun 2019 - Sept 2021)</div>
+                    <div class="vertical_desc">Jr. Research Engineer</div>
                     <div class="vertical_jd">
                         <ul>
-                            <li>Evaluated, modified and tested open source technologies (CouchDB, Redis, Docker Python SDK, AutoDiscovery of
-                                Networks) and exposed these services to integrate into eNlight 360 (cloud)</li>
+                            <li>Evaluated CouchDB, Redis, Docker Python SDK, AutoDiscovery of
+                                Networks and exposed these services to integrate into eNlight 360 (cloud)</li>
                             <li>Implemented wrappers/scripts in python for Container as a Service (CaaS), Netdisco (Autodiscovery of networks),
-                                CouchDB, Database as a Service using Flask Framework and deployed using Docker</li>
-                            <li>Created Research Proposals and documented in-depth information, analysis, methodology, solution architecture
-                                against research problem</li>
+                                CouchDB, Database as a Service using Flask Framework and deployed using Docker.</li>
+                            <li>Created Research Proposals and documented in-depth information</li>
                         </ul>
                     </div>
                 </div>
@@ -217,34 +240,84 @@
             </div>
             <div class="box">
                 <div class="vertical_box">
-                    <img class ="vertical_img" src="graduation_cap.png" alt="graduation">
-                    <div class ="vertical_title">Masters (in progress)</div>
-                    <div class ="vertical_year">(2024-2025)</div>
-                    <div class ="vertical_desc">Information Systems (Big Data Analytics)</div>
-                    <div class="vertical_jd"></div>
+                    <img class="vertical_img" src="graduation_cap.png" alt="Masters">
+                    <div class="vertical_title">Masters (In Progress)</div>
+                    <div class="vertical_year">(2024-2025)</div>
+                    <div class="vertical_desc">Information Systems (Big Data Analytics)</div>
+                    <div class="vertical_jd">
+                        <strong>Coursework:</strong>
+                        <ul>
+                            <li>Big Data Analysis</li>
+                            <li>Data Programming</li>
+                            <li>Big Data Infrastructure</li>
+                            <li>Unstructured Data Management</li>
+                            <li>Database Management Systems</li>
+                            <li>AI for Business</li>
+                            <li>GenAI for Business</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="vertical_box">
-                    <img class ="vertical_img" src="graduation_cap.png" alt="graduation">
-                    <div class ="vertical_title">Bachelors</div>
-                    <div class ="vertical_year">(2015-2019)</div>
-                    <div class ="vertical_desc">B.E Computer Engineering</div>
-                    <div class="vertical_jd">Graduated from Savitribai Phule Pune University with GPA 4 in Computer Engineering</div>
+                    <img class="vertical_img" src="graduation_cap.png" alt="Bachelors">
+                    <div class="vertical_title">B.E Computer Engineering</div>
+                    <div class="vertical_year">(2015-2019)</div>
+                    <div class="vertical_desc">Savitribai Phule Pune University</div>
+                    <div class="vertical_jd">
+                        <strong>Coursework:</strong>
+                        <ul>
+                            <li>Data Structures & Algorithms</li>
+                            <li>Object Oriented Programming</li>
+                            <li>Database Management Systems</li>
+                            <li>Operating Systems</li>
+                            <li>Computer Networks</li>
+                            <li>Software Engineering</li>
+                            <li>Machine learning</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- Contact Info Section -->
+        <div class="contact-container">
+            <h2>Contact Information</h2>
+            <div class="contact-box">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email: <a href="mailto:akankshahinge21@gmail.com">akankshahinge21@gmail.com</a></span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn: 
+                        <a href="https://www.linkedin.com/in/akanksha-hinge-a09b5916b/" target="_blank">Akanksha Hinge</a>
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub: 
+                        <a href="https://github.com/akankshahinge" target="_blank">akankshahinge</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+            
         </section>
         <footer>
             <div class="footer">
-                <div class="footer-first">Copyright &#169; akankshaportfolio.com | All rights reserved</div>
+                <p>Copyright &#169; akankshaportfolio.com | All rights reserved</p>
             </div>
         </footer>
     </main>
-    <!--Adding Animation using Typescript-->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-          strings: ['Software Developer', 'Backend Developer', 'Frontend Developer'],
+          strings: ['Software Developer', 'Backend Developer'],
           typeSpeed: 50,
         });
-      </script>
+    </script>
 </body>
 </html>
